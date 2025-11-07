@@ -42,7 +42,7 @@ jobs:
   deploy:
     needs: build-and-test
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'  # ← Add this!
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' 
     steps:
       - name: Trigger Render Deploy
         run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
