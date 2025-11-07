@@ -8,7 +8,7 @@ export default [
     ignores: ["eslint.config.js"],
     languageOptions: {
       ecmaVersion: 2021,
-      sourceType: "commonjs",
+      sourceType: "module",
       globals: {
         ...globals.node,
         ...globals.mocha,
