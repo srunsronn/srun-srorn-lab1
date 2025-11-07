@@ -36,6 +36,9 @@ jobs:
       # Step 5: Run tests
       - name: Run tests
         run: npm test
+        
+      - name: Run tests with coverage
+        run: npm run coverage
 
       # Step 6: Upload coverage report
       - name: Upload coverage artifact
